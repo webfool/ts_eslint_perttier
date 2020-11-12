@@ -22,7 +22,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "echo i am pre commit!"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
