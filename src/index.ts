@@ -5,4 +5,4 @@ interface A {
   name: string
 }
 
-const c: number = 'abc'
+const c = 123

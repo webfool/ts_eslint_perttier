@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "watch:ts": "tsc --watch",
     "commit": "commit"
   },
   "keywords": [],
