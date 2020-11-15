@@ -22,6 +22,8 @@ module.exports = {
     'plugin:prettier/recommended'
   ],
   rules: {
-    '@typescript-eslint/consistent-type-definitions': ['error', 'interface'] // 覆盖 typescript 校验规则
-  }
+    // '@typescript-eslint/consistent-type-definitions': ['error', 'interface'] // 覆盖 typescript 校验规则
+    '@typescript-eslint/no-extra-semi': 0
+  },
+  ignorePatterns: ['lib/*.js']
 }

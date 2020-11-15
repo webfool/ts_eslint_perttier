@@ -1,8 +1,16 @@
-const a = 1
-console.log('abc')
+// 测试装饰器是否能被 babel 正常编译
+@deco
+class MyClass {}
 
-interface A {
-  name: string
+type Type<T> = {
+  new (...args: any[]): T
 }
 
-const c = 123
+function deco(target: Type<Record<string, any>>) {
+  ;(target as any).isTest = true
+}
+
+// 测试类属性的语法是否能被 babel 正常编译
+class TestProperty {
+  name = 'hw'
+}
